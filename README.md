@@ -1,11 +1,13 @@
 # AMEGO-X-AstroPix-SingleTriggerBG
 Background simulations for astropix (0.5 mm pixel size) with single trigger
 
-Detector configuration files: https://github.com/ComPair/Geometry/tree/master/AMEGO_Midex/TradeStudies/Tracker/BasePixelTracker_05mm_SingleTrigger
+Detector configuration files: https://github.com/ComPair/Geometry/tree/master/AMEGO_Midex/TradeStudies/Tracker/BasePixelTracker_05mm_SingleTrigger_noSubThr (old: https://github.com/ComPair/Geometry/tree/master/AMEGO_Midex/TradeStudies/Tracker/BasePixelTracker_05mm_SingleTrigger)
 
-The directory `tra_files` contains the `.tra` output from **60 seconds** worth of background simulations **with the ACD veto on**.
+The directory `tra_files_noLowHits` contains the `.tra` output from **60 seconds** worth of background simulations **with the ACD veto on and an realistic readout setting (only hits above the trigger threshold are read out)**.
 
-The directory `tra_files_noVeto` contains the `.tra` output from **60 seconds** worth of background simulations **with the ACD veto switched off**.
+The directory `tra_files` contains the `.tra` output from **60 seconds** worth of background simulations **with the ACD veto on and an optimistic readout setting (the entire detector is read out if the trigger conditions are met)**.
+
+The directory `tra_files_noVeto` contains the `.tra` output from **60 seconds** worth of background simulations **with the ACD veto switched off and the optimistic readout setting**.
 
 The directory `sim_files` contains the `.sim` output from **10 seconds** worth of background simulations.
 
